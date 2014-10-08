@@ -143,14 +143,3 @@
 
 })();
 
-DI("Test", function(){
-    //console.log("Neco", Neco);
-    return "a";
-}, true);
-
-DI("Neco", function(Test){
-    return "b"
-});
-
-console.log(DI.get("Test"));
-console.log(DI.get("Neco"));
